@@ -54,6 +54,15 @@ same name, since under-the-hood, the entry has a `.gpg` extension.
     github.com
     github.com/organization
 
+Each pass entry should be formatted like:
+
+    PASSWORD_OR_TOKEN
+    user: USER
+
+Optionally, you can name the field `username`. If the user field is omitted,
+you may be asked by Git. If a user has already been specified to
+Git, it will not be overwritten. All further content is ignored.
+
 Questions and Answers
 ---------------------
 
